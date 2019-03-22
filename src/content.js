@@ -4,6 +4,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Frame, { FrameContextConsumer }from 'react-frame-component';
 import "./content.css";
+import AddArticleForm from './components/AddArticleForm'
+// import 'bootstrap/dist/css/bootstrap.css';
 
 class Main extends React.Component {
     render() {
@@ -16,7 +18,8 @@ class Main extends React.Component {
                       // Render Children
                         return (
                            <div className={'my-extension'}>
-                               <h1>Hello world - My first Extension</h1>
+                               <h1>Hello world - My first Extension is this working?</h1>
+                               <AddArticleForm />
                            </div>
                         )
                     }
