@@ -6,6 +6,9 @@
   "background": {
     "scripts": ["app/background.js"]
   },
+  "permissions": [
+    "tabs"
+  ],
   "browser_action": {},
   "content_scripts" : [
     {

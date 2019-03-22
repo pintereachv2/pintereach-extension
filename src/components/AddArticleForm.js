@@ -7,12 +7,19 @@ import axios from 'axios';
 const URL = 'https://pintereacher.herokuapp.com/api';
 
 class AddArticleView extends React.Component {
-        constructor(props) {
+    constructor(props) {
         super(props);
-
-        this.state = {
-
-        };
+        //     this.state = {
+        //     article: {
+        //         title: '',
+        //         content: props.url,
+        //         abstract: '',
+        //         category: '',
+        //     }
+        // };
+        // alert(Object.entries(props).reduce((str, p)=> {
+        //     return str + `${p[0]}: ${p[1]}\n`
+        // }))
     }
     addArticles = (article) => {
             console.log(article)
@@ -29,7 +36,16 @@ class AddArticleView extends React.Component {
     render() {
         return(
             <div>
-                <ArticleForm doOnSubmit={this.addArticles}></ArticleForm>
+                <ArticleForm 
+                    url={this.props.url} 
+                    doOnSubmit={this.addArticles}
+                    article={{
+                        title: '',
+                        content: this.props.url ? this.props.url: '',
+                        abstract: '',
+                        category: '',
+                    }}
+                ></ArticleForm>
             </div>
         )
         

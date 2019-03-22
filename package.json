@@ -38,6 +38,7 @@
     "react-dev-utils": "^5.0.1",
     "react-dom": "^16.4.1",
     "react-frame-component": "^4.0.0",
+    "react-loader-spinner": "^2.3.0",
     "reactn": "^1.0.0",
     "reactstrap": "^7.1.0",
     "resolve": "1.6.0",
