@@ -3,7 +3,7 @@ import axios from 'axios';
 import Loader from 'react-loader-spinner';
 import { Button, Form, Label, Input } from 'reactstrap';
 
-import Navigation from './Navigation';
+// import Navigation from './Navigation';
 
 import '../App.css';
 // const URL = 'localhost:4000' //env[process.env.environment].url
@@ -43,7 +43,8 @@ class Login extends React.Component {
           userId
         })
         // console.log(this.global)
-        this.props.history.push('/home')
+        // this.props.history.push('/home')
+        this.props.onLogin()
       }).catch(err => console.log(err));
     // console.log(this.state.credentials);
   };

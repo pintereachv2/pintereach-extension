@@ -34,17 +34,18 @@ class AddArticleView extends React.Component {
         }
 
     render() {
+        const art = {
+                        title: '',
+                        content: this.props.url ? this.props.url : '',
+                        abstract: '',
+                        category: '',
+                    }
         return(
             <div>
                 <ArticleForm 
                     url={this.props.url} 
                     doOnSubmit={this.addArticles}
-                    article={{
-                        title: '',
-                        content: this.props.url ? this.props.url: '',
-                        abstract: '',
-                        category: '',
-                    }}
+                    article={art}
                 ></ArticleForm>
             </div>
         )

@@ -1,28 +1,125 @@
 .App {
   text-align: center;
+  font-family: 'Poiret One', cursive;
+  font-weight:  800;
 }
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+  height: 40vmin;
+  pointer-events: none;
 }
 
 .App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+  background-color: #FBFBFB;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: black;
 }
 
-.App-title {
-  font-size: 1.5em;
-}
-
-.App-intro {
-  font-size: large;
+.App-link {
+  color: #61dafb;
 }
 
 @keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.nav-item a {
+  margin-top: -8px;
+  font-weight: 800;  
+    color: #212529;
+
+}
+
+.nav-item {
+  font-weight: 800;  
+}
+
+.tabs .nav.nav-tabs {
+  justify-content: center;  
+}
+
+.tab-nav-item:hover {
+  cursor: pointer;
+  color: #718BE8;
+}
+
+.card-button {
+  background-color: #718BE8;
+  color:white;
+  border-radius: 5px;
+}
+
+.card-button:hover {
+  cursor: pointer;
+  background-color: #C7EEFF;
+  color: black;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.article-card {
+  height: 15rem;
+  margin: 1rem;
+  width: 15rem;
+  padding: 5px;
+}
+
+.card-web-link {
+  margin-bottom: 0.5rem;
+  margin-left: 5px;
+}
+
+.card-button-container {
+  display: flex;
+  margin: 0 auto;
+}
+
+.card-button {
+  width: 5rem;
+  margin: .5rem .5rem;
+}
+
+.nav-text:hover {
+  cursor: pointer;
+  color: #718BE8;
+  text-decoration: none;
+}
+
+.btn-secondary {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.btn-secondary {
+  background-color: #718BE8;
+  color:white;
+  border-radius: 5px;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+.btn-secondary:hover {
+  cursor: pointer;
+  background-color: #C7EEFF;
+  color: black;
+}
+
+.Column-Layout {
+  max-width: 500px;
+  margin: 0 auto;
 }

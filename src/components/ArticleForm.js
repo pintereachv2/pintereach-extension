@@ -14,7 +14,7 @@ class ArticleForm extends Component {
     } else {
       this.state = {
         title: '',
-        content: '',
+        content: window.location.href ,
         abstract: '',
         category: '',
       }
@@ -41,7 +41,7 @@ class ArticleForm extends Component {
     return (
       <div className="form-continer">
         <Form className="Column-Layout">
-          <Label for="Title">Title</Label>
+          <Label for="Title">Title {this.props.url}</Label>
           <Input
             className="input"
             value={this.state.title}
@@ -50,10 +50,10 @@ class ArticleForm extends Component {
             placeholder="Title"
             onChange={this.handleInputChange}
           />
-          <Label for="Content">Content</Label>
+          <Label for="Content">URL</Label>
           <Input
             className="input"
-            value={this.state.content}
+            value={window.location.href }
             name="content"
             type="text"
             placeholder="Website Url"
